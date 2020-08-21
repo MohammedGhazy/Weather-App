@@ -14,6 +14,8 @@ class WeatherViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var imageCondition: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
+    
+    var weatherManger = WeatherManger()
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.delegate = self
@@ -40,6 +42,9 @@ class WeatherViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if  let city = searchTextField.text{
+            weatherManger.fetchWeather(cityName: city)
+        }
         searchTextField.text = ""
     }
     

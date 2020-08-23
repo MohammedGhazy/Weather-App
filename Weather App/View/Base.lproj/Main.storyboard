@@ -35,6 +35,9 @@
                                                 <state key="normal" image="location.circle.fill" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="getLocationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vb9-oa-eUO"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RUl-O3-lVU">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
